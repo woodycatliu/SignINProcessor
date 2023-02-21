@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5BB789DC29A241D300DCA248 /* CombineProcessor in Frameworks */ = {isa = PBXBuildFile; productRef = 5BB789DB29A241D300DCA248 /* CombineProcessor */; };
 		5BD20B56299FE1A500023210 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD20B55299FE1A500023210 /* AppDelegate.swift */; };
 		5BD20B58299FE1A500023210 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD20B57299FE1A500023210 /* SceneDelegate.swift */; };
 		5BD20B5A299FE1A500023210 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD20B59299FE1A500023210 /* ViewController.swift */; };
@@ -16,6 +17,15 @@
 		5BD20B6D299FE1A600023210 /* SignInProcessorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD20B6C299FE1A600023210 /* SignInProcessorTests.swift */; };
 		5BD20B77299FE1A600023210 /* SignInProcessorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD20B76299FE1A600023210 /* SignInProcessorUITests.swift */; };
 		5BD20B79299FE1A600023210 /* SignInProcessorUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD20B78299FE1A600023210 /* SignInProcessorUITestsLaunchTests.swift */; };
+		5BD20B95299FE20900023210 /* SignInProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD20B89299FE20900023210 /* SignInProcessor.swift */; };
+		5BD20B96299FE20900023210 /* SignInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD20B8A299FE20900023210 /* SignInViewModel.swift */; };
+		5BD20B97299FE20900023210 /* SomeTokenServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD20B8C299FE20900023210 /* SomeTokenServer.swift */; };
+		5BD20B98299FE20900023210 /* MockKVTokenService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD20B8D299FE20900023210 /* MockKVTokenService.swift */; };
+		5BD20B99299FE20900023210 /* AppleSignInServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD20B8F299FE20900023210 /* AppleSignInServer.swift */; };
+		5BD20B9A299FE20900023210 /* MockAppleSignInService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD20B90299FE20900023210 /* MockAppleSignInService.swift */; };
+		5BD20B9B299FE20900023210 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD20B91299FE20900023210 /* User.swift */; };
+		5BD20B9C299FE20900023210 /* MockFirebaseSignInService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD20B93299FE20900023210 /* MockFirebaseSignInService.swift */; };
+		5BD20B9D299FE20900023210 /* FirebaseSignInServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD20B94299FE20900023210 /* FirebaseSignInServer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +46,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5BB789DA29A241C100DCA248 /* CombineProcessor */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = CombineProcessor; path = ../CombineProcessor; sourceTree = "<group>"; };
 		5BD20B52299FE1A500023210 /* SignInProcessor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SignInProcessor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BD20B55299FE1A500023210 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5BD20B57299FE1A500023210 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +60,15 @@
 		5BD20B72299FE1A600023210 /* SignInProcessorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SignInProcessorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BD20B76299FE1A600023210 /* SignInProcessorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInProcessorUITests.swift; sourceTree = "<group>"; };
 		5BD20B78299FE1A600023210 /* SignInProcessorUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInProcessorUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		5BD20B89299FE20900023210 /* SignInProcessor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInProcessor.swift; sourceTree = "<group>"; };
+		5BD20B8A299FE20900023210 /* SignInViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInViewModel.swift; sourceTree = "<group>"; };
+		5BD20B8C299FE20900023210 /* SomeTokenServer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SomeTokenServer.swift; sourceTree = "<group>"; };
+		5BD20B8D299FE20900023210 /* MockKVTokenService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockKVTokenService.swift; sourceTree = "<group>"; };
+		5BD20B8F299FE20900023210 /* AppleSignInServer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppleSignInServer.swift; sourceTree = "<group>"; };
+		5BD20B90299FE20900023210 /* MockAppleSignInService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockAppleSignInService.swift; sourceTree = "<group>"; };
+		5BD20B91299FE20900023210 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		5BD20B93299FE20900023210 /* MockFirebaseSignInService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockFirebaseSignInService.swift; sourceTree = "<group>"; };
+		5BD20B94299FE20900023210 /* FirebaseSignInServer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirebaseSignInServer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5BB789DC29A241D300DCA248 /* CombineProcessor in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,10 +100,12 @@
 		5BD20B49299FE1A500023210 = {
 			isa = PBXGroup;
 			children = (
+				5BD20B85299FE1C100023210 /* Packages */,
 				5BD20B54299FE1A500023210 /* SignInProcessor */,
 				5BD20B6B299FE1A600023210 /* SignInProcessorTests */,
 				5BD20B75299FE1A600023210 /* SignInProcessorUITests */,
 				5BD20B53299FE1A500023210 /* Products */,
+				5BD20B9E299FE22600023210 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,6 +122,7 @@
 		5BD20B54299FE1A500023210 /* SignInProcessor */ = {
 			isa = PBXGroup;
 			children = (
+				5BD20B87299FE20900023210 /* SignIn */,
 				5BD20B55299FE1A500023210 /* AppDelegate.swift */,
 				5BD20B57299FE1A500023210 /* SceneDelegate.swift */,
 				5BD20B59299FE1A500023210 /* ViewController.swift */,
@@ -127,6 +151,69 @@
 			path = SignInProcessorUITests;
 			sourceTree = "<group>";
 		};
+		5BD20B85299FE1C100023210 /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				5BB789DA29A241C100DCA248 /* CombineProcessor */,
+			);
+			name = Packages;
+			sourceTree = "<group>";
+		};
+		5BD20B87299FE20900023210 /* SignIn */ = {
+			isa = PBXGroup;
+			children = (
+				5BD20B88299FE20900023210 /* ViewModel */,
+				5BD20B8B299FE20900023210 /* SomeTokenServer */,
+				5BD20B8E299FE20900023210 /* AppleSignInServer */,
+				5BD20B91299FE20900023210 /* User.swift */,
+				5BD20B92299FE20900023210 /* FirebaseSignInServer */,
+			);
+			path = SignIn;
+			sourceTree = "<group>";
+		};
+		5BD20B88299FE20900023210 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				5BD20B89299FE20900023210 /* SignInProcessor.swift */,
+				5BD20B8A299FE20900023210 /* SignInViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		5BD20B8B299FE20900023210 /* SomeTokenServer */ = {
+			isa = PBXGroup;
+			children = (
+				5BD20B8C299FE20900023210 /* SomeTokenServer.swift */,
+				5BD20B8D299FE20900023210 /* MockKVTokenService.swift */,
+			);
+			path = SomeTokenServer;
+			sourceTree = "<group>";
+		};
+		5BD20B8E299FE20900023210 /* AppleSignInServer */ = {
+			isa = PBXGroup;
+			children = (
+				5BD20B8F299FE20900023210 /* AppleSignInServer.swift */,
+				5BD20B90299FE20900023210 /* MockAppleSignInService.swift */,
+			);
+			path = AppleSignInServer;
+			sourceTree = "<group>";
+		};
+		5BD20B92299FE20900023210 /* FirebaseSignInServer */ = {
+			isa = PBXGroup;
+			children = (
+				5BD20B93299FE20900023210 /* MockFirebaseSignInService.swift */,
+				5BD20B94299FE20900023210 /* FirebaseSignInServer.swift */,
+			);
+			path = FirebaseSignInServer;
+			sourceTree = "<group>";
+		};
+		5BD20B9E299FE22600023210 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,6 +230,9 @@
 			dependencies = (
 			);
 			name = SignInProcessor;
+			packageProductDependencies = (
+				5BB789DB29A241D300DCA248 /* CombineProcessor */,
+			);
 			productName = SignInProcessor;
 			productReference = 5BD20B52299FE1A500023210 /* SignInProcessor.app */;
 			productType = "com.apple.product-type.application";
@@ -258,9 +348,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5BD20B9A299FE20900023210 /* MockAppleSignInService.swift in Sources */,
+				5BD20B9D299FE20900023210 /* FirebaseSignInServer.swift in Sources */,
+				5BD20B9C299FE20900023210 /* MockFirebaseSignInService.swift in Sources */,
+				5BD20B95299FE20900023210 /* SignInProcessor.swift in Sources */,
+				5BD20B98299FE20900023210 /* MockKVTokenService.swift in Sources */,
+				5BD20B97299FE20900023210 /* SomeTokenServer.swift in Sources */,
+				5BD20B99299FE20900023210 /* AppleSignInServer.swift in Sources */,
 				5BD20B5A299FE1A500023210 /* ViewController.swift in Sources */,
 				5BD20B56299FE1A500023210 /* AppDelegate.swift in Sources */,
 				5BD20B58299FE1A500023210 /* SceneDelegate.swift in Sources */,
+				5BD20B9B299FE20900023210 /* User.swift in Sources */,
+				5BD20B96299FE20900023210 /* SignInViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -602,6 +701,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5BB789DB29A241D300DCA248 /* CombineProcessor */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = CombineProcessor;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 5BD20B4A299FE1A500023210 /* Project object */;
 }

@@ -6,14 +6,15 @@
 //
 
 import UIKit
+import CombineProcessor
 
+typealias PrivateAction = SignInProcessor.PrivateAction
 class ViewController: UIViewController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         // Do any additional setup after loading the view.
     }
-
-
 }
 
