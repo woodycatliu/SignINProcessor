@@ -113,10 +113,13 @@ extension SignInProcessor {
         
         case emailSignIn(_ email: String, _ password: String)
         
+        case logout
+        
         var privateAction: PrivateAction {
             switch self {
             case .appleSignIn: return .appleSignIn
             case .emailSignIn(let emil, let password): return .signInEmail(with: emil, password: password)
+            case .logout: return .ready
             }
         }
     }
@@ -241,10 +244,9 @@ extension SignInProcessor.Action: CustomStringConvertible {
     
     var description: String {
         switch self {
-        case .emailSignIn:
-            return "emailSignIn"
-        case .appleSignIn:
-            return "appleSignIn"
+        case .logout: return "logout"
+        case .emailSignIn: return "emailSignIn"
+        case .appleSignIn: return "appleSignIn"
         }
     }
 }
@@ -253,28 +255,17 @@ extension SignInProcessor.PrivateAction: CustomStringConvertible {
     var description: String {
         switch self {
             
-        case .appleSignIn:
-            return "appleSignIn"
-        case .signInEmail(with: let with, password: let password):
-            return "signInEmail: \(with), password: \(password)"
-        case .signInProviderID(appleUser: let appleUser):
-            return "signInProviderID: \(appleUser.user)"
-        case .update(response: let response, _, _):
-            return "update: \(response.userId)"
-        case .fetchSomeToken(_, let email, _):
-            return "fetchSomeToken \(email)"
-        case .storeUser:
-            return "storeUser"
-        case .storeAppleUser:
-            return "storeAppleUser"
-        case .updateFirebaseInfoIfNeed:
-            return "updateFirebaseInfoIfNeed"
-        case .updateStauts:
-            return "updateStauts"
-        case .ready:
-            return "ready"
-        case .receiveError(let error):
-            return "receiveError: \(error)"
+        case .appleSignIn: return "appleSignIn"
+        case .signInEmail(with: let with, password: let password): return "signInEmail: \(with), password: \(password)"
+        case .signInProviderID(appleUser: let appleUser): return "signInProviderID: \(appleUser.user)"
+        case .update(response: let response, _, _): return "update: \(response.userId)"
+        case .fetchSomeToken(_, let email, _): return "fetchSomeToken \(email)"
+        case .storeUser: return "storeUser"
+        case .storeAppleUser: return "storeAppleUser"
+        case .updateFirebaseInfoIfNeed: return "updateFirebaseInfoIfNeed"
+        case .updateStauts: return "updateStauts"
+        case .ready: return "ready"
+        case .receiveError(let error): return "receiveError: \(error)"
         }
     }
 }
