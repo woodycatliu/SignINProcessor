@@ -11,7 +11,7 @@ extension FirebaseSignInServer.Response {
     static var test: Self {
         return .init(idToken: "Test Firebase idToken",
                      refreshToken: "Test Firebase refreshToken",
-                     date: Date(timeIntervalSince1970: 12345),
+                     date: Date(),
                      providerID: "Test Firebase provideID",
                      email: "Test@firevase.com",
                      userId: "Test Firebase userID")
