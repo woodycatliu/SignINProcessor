@@ -10,7 +10,7 @@ import XCTest
 
 final class SignInProcessorTests: XCTestCase {
     
-    let user = User(email: "Default@example.com", name: "Default", providerID: "Test Firebase provideID", date: Date(timeIntervalSince1970: 12345), someToken: .init(token: "Test KVToken", refreshToken: "Test KV RefreshToken"), firebaseIDToken: "Test Firebase idToken", firebaseRefreshToekn: "Test Firebase refreshToken")
+    let user = User(email: "Default@example.com", name: "Default", providerID: "Test Firebase provideID", date: Date(), someToken: .init(token: "Test KVToken", refreshToken: "Test KV RefreshToken"), firebaseIDToken: "Test Firebase idToken", firebaseRefreshToekn: "Test Firebase refreshToken")
     
     var processor: SignInProcessor.ProcessorType!
     
