@@ -215,7 +215,7 @@ enum SignInStatus: Equatable {
         case (.isSignIning, isSignIning):
             return true
         case (.didSignIn(user: let user1), .didSignIn(user: let user2)):
-            return user1 == user2
+            return user1.hashValue == user2.hashValue
         case (.error(err: let err1), .error(err: let err2)):
             return err1.localizedDescription == err2.localizedDescription
         default:

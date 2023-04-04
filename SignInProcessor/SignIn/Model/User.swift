@@ -15,6 +15,11 @@ public struct User: Hashable {
     let someToken: SomeToken
     let firebaseIDToken: String
     let firebaseRefreshToekn: String
+    
+    public func hash(into hasher: inout Hasher) {
+        hasher.combine(email)
+        hasher.combine(name)
+    }
 }
 
 extension User {
